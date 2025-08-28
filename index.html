@@ -10,6 +10,29 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
+    <script>
+    function  myGreeting(){
+ Swal.fire({
+  title: "Please Login?",
+  showDenyButton: true,
+  showCancelButton: true,
+  confirmButtonText: "Save",
+  denyButtonText: `you have not logged in`
+}).then((result) => {
+  /* Read more about isConfirmed, isDenied below */
+  if (result.isConfirmed) {
+    Swal.fire("Saved!", "", "success");
+  } else if (result.isDenied) {
+    Swal.fire("Changes are not saved", "", "info");
+  }
+});
+
+    }  
+
+
+const myTimeout = setTimeout(myGreeting, 5000);
+
+    </script>
     <section class="section1">
         <nav>
             <!-- <div class="container"> -->
@@ -142,29 +165,7 @@
             </li>
         </ul>
     </div>
-    <script>
-    function  myGreeting(){
- Swal.fire({
-  title: "Please Login?",
-  showDenyButton: true,
-  showCancelButton: true,
-  confirmButtonText: "Save",
-  denyButtonText: `you have not logged in`
-}).then((result) => {
-  /* Read more about isConfirmed, isDenied below */
-  if (result.isConfirmed) {
-    Swal.fire("Saved!", "", "success");
-  } else if (result.isDenied) {
-    Swal.fire("Changes are not saved", "", "info");
-  }
-});
-
-    }  
-
-
-const myTimeout = setTimeout(myGreeting, 5000);
-
-    </script>
+    
 </body>
 <!-- <footer class="footer" style="height: 100px;"> -->
     <a href="https://web.facebook.com/idorenyin.mfon.490867"><i class="bi bi-facebook" style="color: rgba(10, 10, 250, 0.712);; margin-left:20px;" ></i>follow us</a>
