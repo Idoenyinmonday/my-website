@@ -18,5 +18,44 @@ else if(password==="") {
 console.log('ok');
     
 }
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
+// Save this as script.js
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+  e.preventDefault(); // Prevent actual form submission
+
+  const name = document.getElementById('name').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const message = document.getElementById('message').value.trim();
+  const errorMsg = document.getElementById('errorMsg');
+
+  // Email validation pattern
+  const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+  // Check if any field is empty
+  if (!name || !email || !message) {
+    errorMsg.textContent = 'Please fill in all fields.';
+    return;
+  }
+
+  // Check if email is valid
+  if (!email.match(emailPattern)) {
+    errorMsg.textContent = 'Please enter a valid email address.';
+    return;
+  }
+
+  // If all is good
+  errorMsg.textContent = '';
+  alert('Form submitted successfully!');
+});
