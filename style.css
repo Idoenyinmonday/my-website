@@ -485,7 +485,7 @@ input[type=radio]{
     width:500px;
 }
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width:500px) {
+@media screen and (max-width:550px) {
   .left_section1 {
     width:50%;
   }
@@ -578,8 +578,8 @@ nav{
     color:white;
 } */
 .account{
-    margin-top: 20px;
-    text-align: right;
+    margin-top: 30px;
+    text-align:right;
 }
 .btn1{
     background-color: black;
@@ -588,17 +588,16 @@ nav{
     border-radius: 15px;
     height: 20px;
     font-size: 10px;
-    margin-right:200px;
+    margin-right:180px;
 }
 .btn2{
     width:50px;
     border-radius:20px;
-    height: 20px;
+    height:20px;
     color:black;
     background-color:white;
     font-size: 10px;
-    margin-right:150px;
-    margin-bottom:0;
+    margin-right:180px;
     
 }
 .left_section{
@@ -851,30 +850,85 @@ height:150px;
     border-radius: 20px;
 }
 .idt{
-    margin-top:30px;
+    margin-top:5px;
     margin-right:0px;
-    font-size:13px;
-    width:800px;
-}
-.boy{
-    margin-top:100px;
-    margin-left:1px;
+    font-size:19px;
+    width:300px;
 }
 .pre{
-    margin-left:0px;
-    font-size: 10px;
-    display: block;
+    margin-right:10px;
+    font-size: 20px;
     }
     .console{
-    margin-left:500px;
+    margin-left:5px;
     font-size:10px;
     }
+    .pre1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left:30rem;
 }
 .footerdiv{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left:50rem;
+    margin-left:10rem;
+    margin: 0;
+}
+.email1{
+    margin-left: 10rem;
+    font-size:20px;
+    }
+    .console1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right:10rem;
+}
+.email2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right:10rem;
+}
+#form-body{
+    border-radius: 8px;
+    background-color: #ffff;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 0 6px -1px rgb(172, 170, 170);
+
+    
+}
+#form-body input{
+    width: 100%;
+    height: 50px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    padding-left: 12px;
+    font-size: 16px;
+    border: 1px rgb(202, 202, 202) solid;
+
+}
+#form-body button{
+    width: 95%;
+    height: 50px;
+    background-color: #0866ff;
+    border-radius: 6px;
+    border: none;
+    color: #ffff;
+    font-size: 16px;
+    font-family: 10px;
+    margin-bottom: 20px;
+
+}
+}
+.footerdiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left:100rem;
     margin: 0;
 }
 .foot{
@@ -890,6 +944,26 @@ height:150px;
     padding: 50px 15% 10px;
     border-top: 6px solid#333;
     color: #777;
+}
+.pre1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left:50rem;
+}
+.console1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right:10rem;
+
+}
+.email2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right:10rem;
+
 }
 
 
