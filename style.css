@@ -709,7 +709,7 @@ height:150px;
     border:1px solid black;
     margin:1px;
     border-radius:15px;
-    margin-top: 50px;
+    margin-top:20px;
     /* margin-left:10px; */
 }
 .box3{
@@ -718,13 +718,13 @@ height:150px;
     border:1px solid black;
     margin:1px;
     border-radius:15px;
-    margin-top: 50px;
+    margin-top: 20px;
     /* margin-left:10px; */
 
 }
 .flex_container{
     display: flex;
-    margin-top: 15px;
+    margin-top:30px;
     /* flex-wrap: wrap; */
 }
 .svg_icon{
